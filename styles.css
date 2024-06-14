@@ -23,18 +23,22 @@ body {
     background-color: rgba(0, 0, 0, 0.8); /* Optional: to make text more readable */
     padding: 20px;
     border-radius: 10px;
-    position: relative;
-    max-height: 70%;
-    min-width: 20%;/* Set the minimum height you prefer */
+    /* position: relative; */
+   min-height: 80%;
+    min-width: 30%;/* Set the minimum height you prefer */
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     
     
 }
 .logo img{
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     border-radius: 60%;
+    margin-top: 1rem;
 }
 .aab{
     /* display: block; */
@@ -48,11 +52,11 @@ body {
 }
 .aab p{
     /* margin: 1.5rem; */
-    padding: 0.4rem;
+    padding: 1rem;
     font-size: 1.4rem;
 }
 .aab h1{
-    padding: 0.5rem;
+    padding: 1rem;
     font-size: 2.3rem;
 }
 
@@ -72,20 +76,20 @@ body {
     display: flex;
     align-items: center;
     /* padding: 10px 15px; */
-    padding: 0.7rem;
+    padding: 0.9rem;
     margin: 0 1rem  1rem;
     border-radius: 5px;
     background-color: #007bff;
     color: #fff;
     border-radius: 2rem;
-    width: 120%;
+    width: 150%;
     flex-direction: row;
 }
 
 .button-text {
     margin-right: 30px;
     margin-left: 50px;
-    font-size: 25px;
+    font-size: 2.8rem;
 }
 
 .icon {
@@ -94,9 +98,9 @@ body {
     margin-right: 30px;
 }
 .slideshow-container {
-    margin: 0 0 0 4rem ;
-padding-left: 4rem;
-    width: 75%;
+    margin: 1rem 0 0 4rem ;
+padding-right: 4rem;
+    width: 95%;
     /* max-width: 300px; */
     /* position: absolute; */
     /* overflow: hidden; */
@@ -181,11 +185,11 @@ padding-left: 4rem;
     } */
 
 
-@media (min-width: 600px) and (max-width: 900px) {
+@media (min-width: 500px) and (max-width: 900px) {
     .content {
         padding: 15px;
         border-radius: 7px;
-        min-width: 60%;
+        min-width: 50%;
         min-height: 70%;
     }
 
