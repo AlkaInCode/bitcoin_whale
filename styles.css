@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     margin: 0;
     padding: 0;
@@ -11,51 +16,45 @@ body {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
 .content {
     background-color: rgba(0, 0, 0, 0.8); /* Optional: to make text more readable */
     padding: 20px;
     border-radius: 10px;
-
-    /* display: flex;
+    position: relative;
+    max-height: 65%;
+    min-width: 20%;/* Set the minimum height you prefer */
+    display: flex;
+    flex-direction: column;
     
-     */
+    
 }
 .logo img{
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     border-radius: 60%;
 }
 .aab{
-    display: block;
-    flex-direction: column;
+    /* display: block; */
+    /* flex-direction: column; */
     font-size: 12px;
     font-family: "Nunito Sans", sans-serif;
     line-height: 16px;
-    margin: 0.5rem;
-    padding: 1rem;
-}
-/* .buttonz{
-    cursor: pointer;
-    display: flex;
-    padding: 16px 22px;
-    background: #1cb2f5;
-    text-align: center;
-    border-color: rgb(0, 0, 0);
-    border-style: solid;
-    border-width: 0px;
-    border-radius: 50px;
-    flex-direction: row;
-    justify-content: center;
-    
-} */
+    margin: 1rem;
 
-/* .icon{
-    display: flex;
-    padding-bottom: ;
-} */
+ 
+}
+.aab p{
+    /* margin: 1.5rem; */
+    padding: 0.4rem;
+}
+.aab h1{
+    padding: 0.5rem;
+    font-size: 2.3rem;
+}
+
 .btn-hover {
     display: inline-flex;
     align-items: center;
@@ -71,18 +70,21 @@ body {
 .button-content {
     display: flex;
     align-items: center;
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
+    padding: 0.7rem;
+    margin: 0 1rem  1rem;
     border-radius: 5px;
     background-color: #007bff;
     color: #fff;
     border-radius: 2rem;
     width: 120%;
+    flex-direction: row;
 }
 
 .button-text {
     margin-right: 30px;
     margin-left: 50px;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 .icon {
@@ -91,20 +93,19 @@ body {
     margin-right: 30px;
 }
 .slideshow-container {
-    margin-top: 1rem;
-    width: 100%;
-    max-width: 300px;
-    position: relative;
-    overflow: hidden;
+    margin: 0 0 0 4rem ;
+padding-left: 4rem;
+    width: 75%;
+    /* max-width: 300px; */
+    /* position: absolute; */
+    /* overflow: hidden; */
     /* border: 1px solid #ddd; */
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    /* padding: 1rem; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.2); */
+   
     
-
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    display: flex;
 }
 .slide {
     display: none;
@@ -128,25 +129,97 @@ body {
 .slide:nth-child(1) { animation-delay: 0s; }
 .slide:nth-child(2) { animation-delay: 2s; }
 .slide:nth-child(3) { animation-delay: 4s; }
-/* .slideshow {
-    align-items: center;
-    position: relative;
-    width: 630px;
-    height: 230px;
-    overflow: hidden;
-    margin: 1rem;
-    padding: 1rem;
+
+.last{
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    
 }
 
-.slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    object-fit: cover;
-}
+ /* Media Query for Phones */
+/* @media (max-width: 800px) { */
+    /* .body{
+        display:block;
+    }
+    .content {
+        padding: 10px;
+        border-radius: 5px;
+        width: 80%;
+    }
+    
+    .logo img {
+        width: 600px;
+        height: 440px;
+    }
+    
+    .aab {
+        font-size: 10px;
+        line-height: 14px;
+        margin: 0.25rem;
+        padding: 0.5rem;
+    }
 
-.slide.active {
-    opacity: 1;
-} */
+    .button-content {
+        padding: 8px 12px;
+        width: 100%;
+    }
+
+    .button-text {
+        margin-right: 15px;
+        margin-left: 20px;
+        font-size: 18px;
+    }
+
+    .icon {
+        margin-right: 15px;
+    }
+
+    .slideshow-container {
+        max-width: 100%;
+        padding: 0.5rem;
+    } */
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .content {
+        padding: 15px;
+        border-radius: 7px;
+        width: 60%;
+    }
+
+    .logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .aab {
+        font-size: 1rem;
+        line-height: 15px;
+        margin: 0.5rem;
+        padding: 0.3rem;
+    }
+
+    .aab h1 {
+        font-size: 1.8rem;
+    }
+
+    .button-content {
+        padding: 0.6rem;
+        width: 110%;
+    }
+
+    .button-text {
+        margin-right: 20px;
+        margin-left: 40px;
+        font-size: 22px;
+    }
+
+    .icon {
+        margin-right: 20px;
+    }
+
+    .slideshow-container {
+        max-width: 90%;
+        padding: 1rem;
+    }
+}
