@@ -35,8 +35,8 @@ body {
     
 }
 .logo img{
-    width: 170px;
-    height: 170px;
+    width: 250px;
+    height: 250px;
     border-radius: 60%;
     margin-top: 1rem;
 }
@@ -185,7 +185,60 @@ padding-right: 4rem;
     } */
 
 
-@media (min-width: 500px) and (max-width: 900px) {
+@media screen and (min-width:400px) {
+    .content {
+        padding: 15px;
+        border-radius: 7px;
+        min-width: 50%;
+        min-height: 90%;
+        font-size: 2rem;
+    }
+
+    .logo img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .aab {
+        font-size: 1rem;
+        line-height: 15px;
+        margin: 0.5rem;
+        padding: 0.3rem;
+    }
+
+    .aab h1 {
+        font-size: 2.3rem;
+        padding: 0.4rem;
+    }
+
+    .button-content {
+        padding: 1rem;
+        /* width: 210%; */
+    }
+
+    .button-text {
+        margin-right: 20px;
+        margin-left: 40px;
+        font-size: 3rem;
+        padding: 1rem;
+    }
+
+    .icon {
+        margin-right: 20px;
+    }
+
+    .slideshow-container {
+        max-width: 90%;
+        padding-left: 1rem;
+        justify-content: center;
+    }
+    .last{
+        font-size: 1.9rem;
+        padding: 0.3rem;
+        
+    }
+}
+@media screen and (max-width:842px){
     .content {
         padding: 15px;
         border-radius: 7px;
